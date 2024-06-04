@@ -1,0 +1,10 @@
+<h1>Email Sending Application</h1>
+
+<form [formGroup]="emailRegForm" (ngSubmit)="onSubmitEmail()">
+    <input type="text" placeholder="From email" formControlName="fromEmail">
+    <input type="text" placeholder="To email" formControlName="toEmail">
+    <input type="text" placeholder="Subject" formControlName="subject">
+    <input type="text" placeholder="Text Message" formControlName="textMessage">
+    <button type="submit">Send Email</button>
+
+</form>
